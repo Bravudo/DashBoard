@@ -1,21 +1,13 @@
 
-
-const closeModalBtn = document.getElementById('close_modal_1');
-const openModalBtn = document.getElementById('open_modal_1');
-const modal = document.getElementById('modal_1');
-
+const openMenu = document.getElementById('openMenu');
+const closeMenu = document.getElementById('closeMenu');
+const sidebar = document.getElementById('sidebar');
 
 
-openModalBtn.addEventListener('click', () => {
-    modal.classList.add('open');
-});
-closeModalBtn.addEventListener('click', () =>{
-    modal.classList.remove('open');
-}); 
-
-function openModal(){
-    modal.classList.add('open');
-}
-function closeModal(){
-    modal.classList.remove('open');
-}
+openMenu.addEventListener('click', () => {
+    sidebar.classList.add('open');
+    console.log('abriu')
+})
+closeMenu.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+})
