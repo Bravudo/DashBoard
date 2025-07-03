@@ -12,3 +12,10 @@ openModalBtn.addEventListener('click', () => {
 closeModalBtn.addEventListener('click', () =>{
     modal.classList.remove('open');
 }); 
+
+function openModal(){
+    modal.classList.add('open');
+}
+function closeModal(){
+    modal.classList.remove('open');
+}
