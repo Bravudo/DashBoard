@@ -1,7 +1,7 @@
 :root{
 
     /* light-mode */
-    --primary-color: rgb(0, 64, 255);
+    --primary-color: rgb(0, 255, 136);
     --secondary-color: rgb(61, 61, 61);
     --terceary-color: rgb(232, 231, 231);
 
@@ -62,7 +62,7 @@ body{
 }
 
 .header_img_icon:hover{
-    filter: brightness(80%);
+    filter: brightness(95%);
 }
 /*Menu Sidebar*/
 .navigation_side_bar{
