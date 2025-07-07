@@ -1,9 +1,9 @@
 :root{
 
     /* light-mode */
-    --primary-color: rgb(0, 255, 136);
+    --primary-color: #0ecced;
     --secondary-color: rgb(61, 61, 61);
-    --terceary-color: rgb(232, 231, 231);
+    --terceary-color: #020764;
 
 
     --header-background-color: var(--secondary-color);
@@ -13,8 +13,8 @@
     /*Text*/
     --text-primary-color: var(--primary-color);
 
-    --text-title-size: 1rem;
-    --text-size: 0.8rem;
+    --text-title-size: 2rem;
+    --text-size: 1rem;
 
     --text-weigth-bold: 600;
     --text-weigth-light: 300;
@@ -52,21 +52,22 @@ body{
     background-color: var(--header-background-color);
 }
 
-.fa-solid fa-bars{
-    object-fit: cover;
-    cursor: pointer;
-    box-sizing: border-box;
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
-    font-size: 2rem;
-    color: var(--header-icon-color);
-    transition: all 0.2s ease-out;
+/*Header Icons*/
+
+/*Icon de menu*/
+.fa-solid.fa-bars,.fa-brands.fa-github{
+    color: var(--header-icon-color); 
+    font-size: clamp(1rem, 7vw, 2rem);
+    padding: 5px;
 }
+
 
 .header_img_icon:hover{
     filter: brightness(95%);
 }
+
+
+
 /*Menu Sidebar*/
 .navigation_side_bar{
     position: absolute;
@@ -109,7 +110,7 @@ body{
     justify-content: flex-start;
     gap: 5px;
     width: 100%;
-    padding: 20px 0px;
+    padding: 14px 0px;
     padding-left: 10px;
     text-decoration: none;
     font-size: var(--text-size);
@@ -123,5 +124,4 @@ body{
     background-color: var(--text-primary-color);
     color: var(--header-background-color);
 }
-
 
